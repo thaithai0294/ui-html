@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hoang Dan Co.Ltp</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./imageSample/office-building_4300059.png">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+    <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="brand-title" src="./imageSample/office-building_4300059.png" alt="" style="width: 30px; height: 30px; margin-right: 10px;">
+                <h5 style="color: aliceblue;font-weight: bold;">Hoang Dan Co.Ltd</h5>
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="./app-profile.html" class="dropdown-item">
+                                        <i class="icon-user"></i>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="./email-inbox.html" class="dropdown-item">
+                                        <i class="icon-envelope-open"></i>
+                                        <span class="ml-2">Inbox </span>
+                                    </a>
+                                    <a href="./page-login.html" class="dropdown-item">
+                                        <i class="icon-key"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li><a href="./index.html"><i class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+                    </li>
+                    <li class="nav-label">Master Data</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-app-store"></i><span class="nav-text">Admin</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./">Quản lý người dùng</a></li>
+                            <li><a href="./">Phân quyền quản trị</a></li>
+                            <li><a href="./">Thiết lập hệ thống</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-chart-bar-33"></i><span class="nav-text">Danh Mục</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./">Nhân công</a></li>
+                            <li><a href="./">Máy thi công</a></li>
+                            <li><a href="./">Khoản mục chi phí</a></li>
+                            <li><a href="./">Vật liệu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <h5 class="start-text">
+                            Danh sách dự án
+                        </h5>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <button type="button" class="btn btn-primary ms-auto">Thêm dự án<span
+                            class="btn-icon-right"><i class="fa fa-plus"></i></span>
+                    </button>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Xây dựng trường mầm non Nam Bình, phường Nam Bình, thành phố Ninh Bình</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <i class="fa fa-circle" aria-hidden="true" style="color:aqua;font-size: 8px;"></i>
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Đang thực hiện</p>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Mã dự án : </p>
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">AXK01912</p>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Ngày tạo : </p>
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">03/04/2024</p>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Người thực hiện : </p>
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Trần Văn An</p>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-4">
+                                                <div class="col-sm-2 d-inline-block">
+                                                    <h6 class="mb-0">Tình trạng</h6>
+                                                    <span class="badge badge-info">Bình thường</span>
+                                                    <p class="mb-0 subtitle" style="font-size: 11px;">Tổng hợp lúc : </p>
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">15:45</p>
+                                                    <p class="mb-0" style="font-size: 11px;">Ngày: </p>
+                                                    <p class="mb-0" style="font-size: 11px;">03/04/2024</p>
+                                                </div>
+                                                <div class="col-sm-5 d-inline-block">
+                                                    <canvas id="doughnut_chart_1"></canvas>
+                                                </div>
+                                                <div class="col-sm-5 d-inline-block">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <p class="mb-0" style="font-size: 11px;">Tiến độ kế hoạch</p>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="current-progressbar">
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-primary w-80" role="progressbar"
+                                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                                        80%
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <p class="mb-0" style="font-size: 11px;">Tiến độ thực tế</p>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="current-progressbar">
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-primary w-40" role="progressbar"
+                                                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                                        40%
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Xây dựng xí nghiệp KHT huyện Cần Giờ, TP HCM </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <i class="fa fa-circle" aria-hidden="true" style="color:aqua;font-size: 8px;"></i>
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Đang thực hiện</p>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Mã dự án : </p>
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">CGH019145</p>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Ngày tạo : </p>
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">03/03/2024</p>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Người thực hiện : </p>
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Trần Minh U</p>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-4">
+                                                <div class="col-sm-2 d-inline-block">
+                                                    <h6 class="mb-0">Tình trạng</h6>
+                                                    <span class="badge badge-info">Bình thường</span>
+                                                    <p class="mb-0 subtitle" style="font-size: 11px;">Tổng hợp lúc : </p>
+                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">09:15</p>
+                                                    <p class="mb-0" style="font-size: 11px;">Ngày: </p>
+                                                    <p class="mb-0" style="font-size: 11px;">03/03/2024</p>
+                                                </div>
+                                                <div class="col-sm-5 d-inline-block">
+                                                    <canvas id="doughnut_chart_2"></canvas>
+                                                </div>
+                                                <div class="col-sm-5 d-inline-block">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <p class="mb-0" style="font-size: 11px;">Tiến độ kế hoạch</p>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="current-progressbar">
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-primary w-70" role="progressbar"
+                                                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                                        70%
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <p class="mb-0" style="font-size: 11px;">Tiến độ thực tế</p>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="current-progressbar">
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-primary w-20" role="progressbar"
+                                                                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                                        20%
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                                    
+                            <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Xây dựng công ty TNHH ABC</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <i class="fa fa-circle" aria-hidden="true" style="color:aqua;font-size: 8px;"></i>
+                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Đang thực hiện</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Mã dự án : </p>
+                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">ABC01912</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Ngày tạo : </p>
+                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">01/04/2024</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Người thực hiện : </p>
+                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Nguyễn Văn H</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-sm-2 d-inline-block">
+                                            <h6 class="mb-0">Tình trạng</h6>
+                                            <span class="badge badge-info">Bình thường</span>
+                                            <p class="mb-0 subtitle" style="font-size: 11px;">Tổng hợp lúc : </p>
+                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">08:45</p>
+                                            <p class="mb-0" style="font-size: 11px;">Ngày: </p>
+                                            <p class="mb-0" style="font-size: 11px;">01/04/2024</p>
+                                        </div>
+                                        <div class="col-sm-5 d-inline-block">
+                                            <canvas id="doughnut_chart_3"></canvas>
+                                        </div>
+                                        <div class="col-sm-5 d-inline-block">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <p class="mb-0" style="font-size: 11px;">Tiến độ kế hoạch</p>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="current-progressbar">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress-bar-primary w-30" role="progressbar"
+                                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                                                30%
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <p class="mb-0" style="font-size: 11px;">Tiến độ thực tế</p>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="current-progressbar">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress-bar-primary w-60" role="progressbar"
+                                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                                60%
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                 </div>
+                                </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- Default accordion -->
+                                    <div id="accordion-one" class="accordion">
+                                        <div class="accordion__item">
+                                            <div class="accordion__header" data-toggle="collapse" data-target="#default_collapseOne">
+                                                <span class="accordion__header--text">Đề xuất cần duyệt</span>
+                                                <span class="accordion__header--indicator"></span>
+                                            </div>
+                                            <div id="default_collapseOne" class="collapse accordion__body show" data-parent="#accordion-one">
+                                                <div class="accordion__body--text">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-responsive-sm">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th style="font-size: 11px;">Tên công việc</th>
+                                                                                    <th style="font-size: 11px;">Ngày đề xuất</th>
+                                                                                    <th style="font-size: 11px;">Người đề xuất</th>
+                                                                                    <th style="font-size: 11px;">Ngày mong muôn</th>
+                                                                                    <th style="font-size: 11px;">Người duyệt</th>
+                                                                                    <th style="font-size: 11px;">Tình trạng</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="font-size: 11px;">Tiger Nixon</td>
+                                                                                    <td style="font-size: 11px;">System Architect</td>
+                                                                                    <td style="font-size: 11px;">Edinburgh</td>
+                                                                                    <td style="font-size: 11px;">61</td>
+                                                                                    <td style="font-size: 11px;">2011/04/25</td>
+                                                                                    <td style="font-size: 11px;"><span class="badge badge-pill badge-danger">Từ chối</span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style="font-size: 11px;">Garrett Winters</td>
+                                                                                    <td style="font-size: 11px;">Accountant</td>
+                                                                                    <td style="font-size: 11px;">Tokyo</td>
+                                                                                    <td style="font-size: 11px;">63</td>
+                                                                                    <td style="font-size: 11px;">2011/07/25</td>
+                                                                                    <td style="font-size: 11px;"><span class="badge badge-pill badge-warning">Chờ duyệt</span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style="font-size: 11px;">Ashton Cox</td>
+                                                                                    <td style="font-size: 11px;">Junior Technical Author</td>
+                                                                                    <td style="font-size: 11px;">San Francisco</td>
+                                                                                    <td style="font-size: 11px;">66</td>
+                                                                                    <td style="font-size: 11px;">2009/01/12</td>
+                                                                                    <td style="font-size: 11px;"><span class="badge badge-pill badge-success">Hoàn thành</span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style="font-size: 11px;">Cedric Kelly</td>
+                                                                                    <td style="font-size: 11px;">Senior Javascript Developer</td>
+                                                                                    <td style="font-size: 11px;">Edinburgh</td>
+                                                                                    <td style="font-size: 11px;">22</td>
+                                                                                    <td style="font-size: 11px;">2012/03/29</td>
+                                                                                    <td style="font-size: 11px;"><span class="badge badge-pill badge-primary">Đã duyệt</span></td>
+                                                                                </tr>                                           
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+
+
+                    </div>
+                    </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <script src="./js/custom.min.js"></script>
+
+
+    <!-- Chart ChartJS plugin files -->
+    <script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="./js/plugins-init/chartjs-init.js"></script>
+    
+
+    <!-- Vectormap -->
+    <script src="./vendor/raphael/raphael.min.js"></script>
+    <script src="./vendor/morris/morris.min.js"></script>
+
+
+    <script src="./vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="./vendor/gaugeJS/dist/gauge.min.js"></script>
+
+    <!--  flot-chart js -->
+    <script src="./vendor/flot/jquery.flot.js"></script>
+    <script src="./vendor/flot/jquery.flot.resize.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    
+    <!-- Counter Up -->
+    <script src="./vendor/jqvmap/js/jquery.vmap.min.js"></script>
+    <script src="./vendor/jqvmap/js/jquery.vmap.usa.js"></script>
+    <script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>
+    
+    
+    <script src="./js/dashboard/dashboard-1.js"></script>
+    
+    <!-- Datatable -->
+    <script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="./js/plugins-init/datatables.init.js"></script>
+    
+    
+    </body>
+    
+    </html>
