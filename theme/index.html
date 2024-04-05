@@ -114,13 +114,15 @@
             <div class="quixnav-scroll">
                 <ul class="metismenu" id="menu">
                     <li><a href="./index.html"><i class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+                    <li><a href="#projectList"><i class="fa fa-folder-open"></i><span class="nav-text">Danh sách dự án</span></a>
+                    <li><a href="#proposeList"><i class="fa fa-bell-o"></i><span class="nav-text">Thông báo</span></a>
                     </li>
                     <li class="nav-label">Master Data</li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
                                 class="icon icon-app-store"></i><span class="nav-text">Admin</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="./">Quản lý người dùng</a></li>
-                            <li><a href="./">Phân quyền quản trị</a></li>
+                            <li><a href="./users.html">Quản lý người dùng</a></li>
+                            <li><a href="./roles.html">Phân quyền quản trị</a></li>
                             <li><a href="./">Thiết lập hệ thống</a></li>
                         </ul>
                     </li>
@@ -149,306 +151,290 @@
             <!-- row -->
             <div class="container-fluid">
                 <div class="row page-titles mx-0">
-                    <div class="col-sm-6 p-md-0">
-                        <h5 class="start-text">
-                            Danh sách dự án
-                        </h5>
+                    <div class="col-sm-12 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <button type="button" class="btn btn-primary ms-auto btn-xs" data-toggle="modal" data-target="#exampleModalCenter">Thêm dự án<span class="btn-icon-right"><i
+                                    class="fa fa-plus"></i></span>
+                        </button>
                     </div>
-                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
-                        <button type="button" class="btn btn-primary ms-auto">Thêm dự án<span
-                            class="btn-icon-right"><i class="fa fa-plus"></i></span>
-                    </button>
-                    </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-7">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Xây dựng trường mầm non Nam Bình, phường Nam Bình, thành phố Ninh Bình</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-sm-3">
-                                                    <i class="fa fa-circle" aria-hidden="true" style="color:aqua;font-size: 8px;"></i>
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Đang thực hiện</p>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Mã dự án : </p>
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">AXK01912</p>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Ngày tạo : </p>
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">03/04/2024</p>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Người thực hiện : </p>
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Trần Văn An</p>
-                                                </div>
-                                            </div>
-                                            <div class="row mt-4">
-                                                <div class="col-sm-2 d-inline-block">
-                                                    <h6 class="mb-0">Tình trạng</h6>
-                                                    <span class="badge badge-info">Bình thường</span>
-                                                    <p class="mb-0 subtitle" style="font-size: 11px;">Tổng hợp lúc : </p>
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">15:45</p>
-                                                    <p class="mb-0" style="font-size: 11px;">Ngày: </p>
-                                                    <p class="mb-0" style="font-size: 11px;">03/04/2024</p>
-                                                </div>
-                                                <div class="col-sm-5 d-inline-block">
-                                                    <canvas id="doughnut_chart_1"></canvas>
-                                                </div>
-                                                <div class="col-sm-5 d-inline-block">
-                                                    <div class="row">
-                                                        <div class="col-lg-4">
-                                                            <p class="mb-0" style="font-size: 11px;">Tiến độ kế hoạch</p>
-                                                        </div>
-                                                        <div class="col-lg-8">
-                                                            <div class="current-progressbar">
-                                                                <div class="progress">
-                                                                    <div class="progress-bar progress-bar-primary w-80" role="progressbar"
-                                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                                                        80%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-4">
-                                                            <p class="mb-0" style="font-size: 11px;">Tiến độ thực tế</p>
-                                                        </div>
-                                                        <div class="col-lg-8">
-                                                            <div class="current-progressbar">
-                                                                <div class="progress">
-                                                                    <div class="progress-bar progress-bar-primary w-40" role="progressbar"
-                                                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                                                        40%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Xây dựng xí nghiệp KHT huyện Cần Giờ, TP HCM </h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-sm-3">
-                                                    <i class="fa fa-circle" aria-hidden="true" style="color:aqua;font-size: 8px;"></i>
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Đang thực hiện</p>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Mã dự án : </p>
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">CGH019145</p>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Ngày tạo : </p>
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">03/03/2024</p>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Người thực hiện : </p>
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Trần Minh U</p>
-                                                </div>
-                                            </div>
-                                            <div class="row mt-4">
-                                                <div class="col-sm-2 d-inline-block">
-                                                    <h6 class="mb-0">Tình trạng</h6>
-                                                    <span class="badge badge-info">Bình thường</span>
-                                                    <p class="mb-0 subtitle" style="font-size: 11px;">Tổng hợp lúc : </p>
-                                                    <p class="mb-0 subtitle d-inline" style="font-size: 11px;">09:15</p>
-                                                    <p class="mb-0" style="font-size: 11px;">Ngày: </p>
-                                                    <p class="mb-0" style="font-size: 11px;">03/03/2024</p>
-                                                </div>
-                                                <div class="col-sm-5 d-inline-block">
-                                                    <canvas id="doughnut_chart_2"></canvas>
-                                                </div>
-                                                <div class="col-sm-5 d-inline-block">
-                                                    <div class="row">
-                                                        <div class="col-lg-4">
-                                                            <p class="mb-0" style="font-size: 11px;">Tiến độ kế hoạch</p>
-                                                        </div>
-                                                        <div class="col-lg-8">
-                                                            <div class="current-progressbar">
-                                                                <div class="progress">
-                                                                    <div class="progress-bar progress-bar-primary w-70" role="progressbar"
-                                                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                                                        70%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-4">
-                                                            <p class="mb-0" style="font-size: 11px;">Tiến độ thực tế</p>
-                                                        </div>
-                                                        <div class="col-lg-8">
-                                                            <div class="current-progressbar">
-                                                                <div class="progress">
-                                                                    <div class="progress-bar progress-bar-primary w-20" role="progressbar"
-                                                                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                                        20%
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                                    
-                            <div class="col-xl-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Xây dựng công ty TNHH ABC</h4>
-                                </div>
-                                <div class="card-body">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div id="accordion-three" class="accordion accordion-bordered">
+                            <div class="accordion__item">
+                                <div class="accordion__header" data-toggle="collapse" data-target="#no-gutter_collapseOne">
                                     <div class="row">
-                                        <div class="col-sm-3">
-                                            <i class="fa fa-circle" aria-hidden="true" style="color:aqua;font-size: 8px;"></i>
-                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Đang thực hiện</p>
+                                        <div class="col-sm-11" id="projectList">
+                                            <span class="accordion__header--text">
+                                                Danh sách dự án
+                                            </span>
                                         </div>
-                                        <div class="col-sm-3">
-                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Mã dự án : </p>
-                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">ABC01912</p>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Ngày tạo : </p>
-                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">01/04/2024</p>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Người thực hiện : </p>
-                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Nguyễn Văn H</p>
+                                        <div class="col-sm-1">
+                                            <span class="accordion__header--indicator"></span>
                                         </div>
                                     </div>
-                                    <div class="row mt-4">
-                                        <div class="col-sm-2 d-inline-block">
-                                            <h6 class="mb-0">Tình trạng</h6>
-                                            <span class="badge badge-info">Bình thường</span>
-                                            <p class="mb-0 subtitle" style="font-size: 11px;">Tổng hợp lúc : </p>
-                                            <p class="mb-0 subtitle d-inline" style="font-size: 11px;">08:45</p>
-                                            <p class="mb-0" style="font-size: 11px;">Ngày: </p>
-                                            <p class="mb-0" style="font-size: 11px;">01/04/2024</p>
-                                        </div>
-                                        <div class="col-sm-5 d-inline-block">
-                                            <canvas id="doughnut_chart_3"></canvas>
-                                        </div>
-                                        <div class="col-sm-5 d-inline-block">
-                                            <div class="row">
-                                                <div class="col-lg-4">
-                                                    <p class="mb-0" style="font-size: 11px;">Tiến độ kế hoạch</p>
-                                                </div>
-                                                <div class="col-lg-8">
-                                                    <div class="current-progressbar">
-                                                        <div class="progress">
-                                                            <div class="progress-bar progress-bar-primary w-30" role="progressbar"
-                                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                                                30%
+                                </div>
+                                <div id="no-gutter_collapseOne" class="collapse accordion__body show"
+                                    data-parent="#accordion-three">
+                                    <div class="accordion__body--text">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Xây dựng trường mầm non Nam Bình, phường Nam
+                                                            Bình, thành phố Ninh Bình</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-sm-3">
+                                                                <i class="fa fa-circle" aria-hidden="true"
+                                                                    style="color:aqua;font-size: 8px;"></i>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Đang
+                                                                    thực hiện</p>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Mã dự
+                                                                    án : </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">
+                                                                    AXK01912</p>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Ngày
+                                                                    tạo : </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">
+                                                                    03/04/2024</p>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Người
+                                                                    thực hiện : </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Trần
+                                                                    Văn An</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-4">
+                                                            <div class="col-sm-2 d-inline-block">
+                                                                <h6 class="mb-0">Tình trạng</h6>
+                                                                <span class="badge badge-info">Bình thường</span>
+                                                                <p class="mb-0 subtitle" style="font-size: 11px;">Tổng hợp lúc :
+                                                                </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">15:45
+                                                                </p>
+                                                                <p class="mb-0" style="font-size: 11px;">Ngày: </p>
+                                                                <p class="mb-0" style="font-size: 11px;">03/04/2024</p>
+                                                            </div>
+                                                            <div class="col-sm-5 d-inline-block">
+                                                                <canvas id="doughnut_chart_1"></canvas>
+                                                            </div>
+                                                            <div class="col-sm-5 d-inline-block">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <p class="mb-0" style="font-size: 11px;">Tiến độ kế
+                                                                            hoạch</p>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <div class="current-progressbar">
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar progress-bar-primary w-80"
+                                                                                    role="progressbar" aria-valuenow="80"
+                                                                                    aria-valuemin="0" aria-valuemax="100">
+                                                                                    80%
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <p class="mb-0" style="font-size: 11px;">Tiến độ thực tế
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <div class="current-progressbar">
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar progress-bar-primary w-40"
+                                                                                    role="progressbar" aria-valuenow="40"
+                                                                                    aria-valuemin="0" aria-valuemax="100">
+                                                                                    40%
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-lg-4">
-                                                    <p class="mb-0" style="font-size: 11px;">Tiến độ thực tế</p>
-                                                </div>
-                                                <div class="col-lg-8">
-                                                    <div class="current-progressbar">
-                                                        <div class="progress">
-                                                            <div class="progress-bar progress-bar-primary w-60" role="progressbar"
-                                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                                                60%
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Xây dựng xí nghiệp KHT huyện Cần Giờ, TP HCM
+                                                        </h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-sm-3">
+                                                                <i class="fa fa-circle" aria-hidden="true"
+                                                                    style="color:aqua;font-size: 8px;"></i>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Đang
+                                                                    thực hiện</p>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Mã dự
+                                                                    án : </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">
+                                                                    CGH019145</p>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Ngày
+                                                                    tạo : </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">
+                                                                    03/03/2024</p>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Người
+                                                                    thực hiện : </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Trần
+                                                                    Minh U</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-4">
+                                                            <div class="col-sm-2 d-inline-block">
+                                                                <h6 class="mb-0">Tình trạng</h6>
+                                                                <span class="badge badge-info">Bình thường</span>
+                                                                <p class="mb-0 subtitle" style="font-size: 11px;">Tổng hợp lúc :
+                                                                </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">09:15
+                                                                </p>
+                                                                <p class="mb-0" style="font-size: 11px;">Ngày: </p>
+                                                                <p class="mb-0" style="font-size: 11px;">03/03/2024</p>
+                                                            </div>
+                                                            <div class="col-sm-5 d-inline-block">
+                                                                <canvas id="doughnut_chart_2"></canvas>
+                                                            </div>
+                                                            <div class="col-sm-5 d-inline-block">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <p class="mb-0" style="font-size: 11px;">Tiến độ kế
+                                                                            hoạch</p>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <div class="current-progressbar">
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar progress-bar-primary w-70"
+                                                                                    role="progressbar" aria-valuenow="70"
+                                                                                    aria-valuemin="0" aria-valuemax="100">
+                                                                                    70%
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <p class="mb-0" style="font-size: 11px;">Tiến độ thực tế
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <div class="current-progressbar">
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar progress-bar-primary w-20"
+                                                                                    role="progressbar" aria-valuenow="20"
+                                                                                    aria-valuemin="0" aria-valuemax="100">
+                                                                                    20%
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                                 </div>
-                                </div>
-                        </div>
-                        <div class="col-xl-5">
-                            <div class="card">
-                                <div class="card-body">
-                                    <!-- Default accordion -->
-                                    <div id="accordion-one" class="accordion">
-                                        <div class="accordion__item">
-                                            <div class="accordion__header" data-toggle="collapse" data-target="#default_collapseOne">
-                                                <span class="accordion__header--text">Đề xuất cần duyệt</span>
-                                                <span class="accordion__header--indicator"></span>
-                                            </div>
-                                            <div id="default_collapseOne" class="collapse accordion__body show" data-parent="#accordion-one">
-                                                <div class="accordion__body--text">
-                                                    <div class="row">
-                                                        <div class="col-sm-12">
-                                                            <div class="card">
-                                                                <div class="card-body">
-                                                                    <div class="table-responsive">
-                                                                        <table class="table table-responsive-sm">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th style="font-size: 11px;">Tên công việc</th>
-                                                                                    <th style="font-size: 11px;">Ngày đề xuất</th>
-                                                                                    <th style="font-size: 11px;">Người đề xuất</th>
-                                                                                    <th style="font-size: 11px;">Ngày mong muôn</th>
-                                                                                    <th style="font-size: 11px;">Người duyệt</th>
-                                                                                    <th style="font-size: 11px;">Tình trạng</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td style="font-size: 11px;">Tiger Nixon</td>
-                                                                                    <td style="font-size: 11px;">System Architect</td>
-                                                                                    <td style="font-size: 11px;">Edinburgh</td>
-                                                                                    <td style="font-size: 11px;">61</td>
-                                                                                    <td style="font-size: 11px;">2011/04/25</td>
-                                                                                    <td style="font-size: 11px;"><span class="badge badge-pill badge-danger">Từ chối</span></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style="font-size: 11px;">Garrett Winters</td>
-                                                                                    <td style="font-size: 11px;">Accountant</td>
-                                                                                    <td style="font-size: 11px;">Tokyo</td>
-                                                                                    <td style="font-size: 11px;">63</td>
-                                                                                    <td style="font-size: 11px;">2011/07/25</td>
-                                                                                    <td style="font-size: 11px;"><span class="badge badge-pill badge-warning">Chờ duyệt</span></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style="font-size: 11px;">Ashton Cox</td>
-                                                                                    <td style="font-size: 11px;">Junior Technical Author</td>
-                                                                                    <td style="font-size: 11px;">San Francisco</td>
-                                                                                    <td style="font-size: 11px;">66</td>
-                                                                                    <td style="font-size: 11px;">2009/01/12</td>
-                                                                                    <td style="font-size: 11px;"><span class="badge badge-pill badge-success">Hoàn thành</span></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td style="font-size: 11px;">Cedric Kelly</td>
-                                                                                    <td style="font-size: 11px;">Senior Javascript Developer</td>
-                                                                                    <td style="font-size: 11px;">Edinburgh</td>
-                                                                                    <td style="font-size: 11px;">22</td>
-                                                                                    <td style="font-size: 11px;">2012/03/29</td>
-                                                                                    <td style="font-size: 11px;"><span class="badge badge-pill badge-primary">Đã duyệt</span></td>
-                                                                                </tr>                                           
-                                                                            </tbody>
-                                                                        </table>
+                                        <div class="row">
+        
+                                            <div class="col-xl-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Xây dựng công ty TNHH ABC</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-sm-3">
+                                                                <i class="fa fa-circle" aria-hidden="true"
+                                                                    style="color:aqua;font-size: 8px;"></i>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Đang
+                                                                    thực hiện</p>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Mã dự
+                                                                    án : </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">
+                                                                    ABC01912</p>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Ngày
+                                                                    tạo : </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">
+                                                                    01/04/2024</p>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">Người
+                                                                    thực hiện : </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">
+                                                                    Nguyễn Văn H</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-4">
+                                                            <div class="col-sm-2 d-inline-block">
+                                                                <h6 class="mb-0">Tình trạng</h6>
+                                                                <span class="badge badge-info">Bình thường</span>
+                                                                <p class="mb-0 subtitle" style="font-size: 11px;">Tổng hợp lúc :
+                                                                </p>
+                                                                <p class="mb-0 subtitle d-inline" style="font-size: 11px;">08:45
+                                                                </p>
+                                                                <p class="mb-0" style="font-size: 11px;">Ngày: </p>
+                                                                <p class="mb-0" style="font-size: 11px;">01/04/2024</p>
+                                                            </div>
+                                                            <div class="col-sm-5 d-inline-block">
+                                                                <canvas id="doughnut_chart_3"></canvas>
+                                                            </div>
+                                                            <div class="col-sm-5 d-inline-block">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <p class="mb-0" style="font-size: 11px;">Tiến độ kế
+                                                                            hoạch</p>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <div class="current-progressbar">
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar progress-bar-primary w-30"
+                                                                                    role="progressbar" aria-valuenow="30"
+                                                                                    aria-valuemin="0" aria-valuemax="100">
+                                                                                    30%
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-4">
+                                                                        <p class="mb-0" style="font-size: 11px;">Tiến độ thực tế
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <div class="current-progressbar">
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar progress-bar-primary w-60"
+                                                                                    role="progressbar" aria-valuenow="60"
+                                                                                    aria-valuemin="0" aria-valuemax="100">
+                                                                                    60%
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -461,11 +447,223 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                
-
-
                     </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Default accordion -->
+                        <div id="accordion-one" class="accordion">
+                            <div class="accordion__item">
+                                <div class="accordion__header" data-toggle="collapse" data-target="#default_collapseOne">
+                                    <span class="accordion__header--text" id="proposeList">Đề xuất cần duyệt</span>
+                                    <span class="accordion__header--indicator"></span>
+                                </div>
+                                <div id="default_collapseOne" class="collapse accordion__body show" data-parent="#accordion-one">
+                                    <div class="accordion__body--text">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-responsive-sm">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th style="font-size: 11px;">Tên công việc</th>
+                                                                        <th style="font-size: 11px;">Ngày đề xuất</th>
+                                                                        <th style="font-size: 11px;">Người đề xuất</th>
+                                                                        <th style="font-size: 11px;">Ngày mong muôn</th>
+                                                                        <th style="font-size: 11px;">Người duyệt</th>
+                                                                        <th style="font-size: 11px;">Tình trạng</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="font-size: 11px;">Tiger Nixon</td>
+                                                                        <td style="font-size: 11px;">System Architect
+                                                                        </td>
+                                                                        <td style="font-size: 11px;">Edinburgh</td>
+                                                                        <td style="font-size: 11px;">61</td>
+                                                                        <td style="font-size: 11px;">2011/04/25</td>
+                                                                        <td style="font-size: 11px;"><span
+                                                                                class="badge badge-pill badge-danger">Từ
+                                                                                chối</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-size: 11px;">Garrett Winters
+                                                                        </td>
+                                                                        <td style="font-size: 11px;">Accountant</td>
+                                                                        <td style="font-size: 11px;">Tokyo</td>
+                                                                        <td style="font-size: 11px;">63</td>
+                                                                        <td style="font-size: 11px;">2011/07/25</td>
+                                                                        <td style="font-size: 11px;"><span
+                                                                                class="badge badge-pill badge-warning">Chờ
+                                                                                duyệt</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-size: 11px;">Ashton Cox</td>
+                                                                        <td style="font-size: 11px;">Junior Technical
+                                                                            Author</td>
+                                                                        <td style="font-size: 11px;">San Francisco</td>
+                                                                        <td style="font-size: 11px;">66</td>
+                                                                        <td style="font-size: 11px;">2009/01/12</td>
+                                                                        <td style="font-size: 11px;"><span
+                                                                                class="badge badge-pill badge-success">Hoàn
+                                                                                thành</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-size: 11px;">Cedric Kelly</td>
+                                                                        <td style="font-size: 11px;">Senior Javascript
+                                                                            Developer</td>
+                                                                        <td style="font-size: 11px;">Edinburgh</td>
+                                                                        <td style="font-size: 11px;">22</td>
+                                                                        <td style="font-size: 11px;">2012/03/29</td>
+                                                                        <td style="font-size: 11px;"><span
+                                                                                class="badge badge-pill badge-primary">Đã
+                                                                                duyệt</span></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Tạo dự án mới</h5>
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">       
+                            <div class="basic-form">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Mã dự án</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Tên dự án
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Mô tả</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label text-right">Nhóm dự án</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                                                    <datalist id="datalistOptions">
+                                                        <option value="Kinh doanh">
+                                                        <option value="Nhân sự">
+                                                        <option value="Mua hàng">
+                                                        <option value="Thi công">
+                                                        <option value="Thiết kế">
+                                                    </datalist>
+                                                </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Loại dự án</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control">
+                                                <option>Dự án thực tế</option>
+                                                <option>Dự án mẫu</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Quản trị dự án</label>
+                                        <div class="col-sm-9">
+                                            <select multiple class="form-control" id="sel2">
+                                                <option value="1">Nguyễn Văn A</option>
+                                                <option value="2">Trần Thị B</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Nguyễn Tiến H</option>
+                                                <option value="1">Nguyễn Văn A</option>
+                                                <option value="2">Trần Thị B</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Nguyễn Tiến H</option>
+                                              </select>                   
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Thực hiện dự án</label>
+                                        <div class="col-sm-9">
+                                            <select multiple class="form-control" id="sel2">
+                                                <option value="1">Nguyễn Văn A</option>
+                                                <option value="2">Trần Thị B</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Nguyễn Tiến H</option>
+                                                <option value="1">Nguyễn Văn A</option>
+                                                <option value="2">Trần Thị B</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Nguyễn Tiến H</option>
+                                              </select>                   
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Người theo dõi</label>
+                                        <div class="col-sm-9">
+                                            <select multiple class="form-control" id="sel2">
+                                                <option value="1">Nguyễn Văn A</option>
+                                                <option value="2">Trần Thị B</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Nguyễn Tiến H</option>
+                                                <option value="1">Nguyễn Văn A</option>
+                                                <option value="2">Trần Thị B</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Đặng Quốc G</option>
+                                                <option value="3">Nguyễn Tiến H</option>
+                                              </select>                   
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Trạng thái</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control">
+                                                <option>Kế hoạch</option>
+                                                <option>Đang thực hiện</option>
+                                                <option>Tạm dừng</option>
+                                                <option>Hoàn thành</option>
+                                                <option>Đóng</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Tạo dự án</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--**********************************
             Content body end
         ***********************************-->
