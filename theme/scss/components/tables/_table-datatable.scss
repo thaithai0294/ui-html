@@ -26,9 +26,9 @@ table.dataTable tfoot th, table.dataTable tfoot td{
     border-top: 0;
 }
 
-table.dataTable tbody tr, table.dataTable tbody td{
-    background: transparent !important;
-}
+// table.dataTable tbody tr, table.dataTable tbody td{
+//     background: transparent !important;
+// }
 
 table.dataTable thead th{
     color: $dark;

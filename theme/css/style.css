@@ -1628,7 +1628,7 @@ pre {
     background-color: #fff;
     border-color: #b4a7ef;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(89, 59, 219, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(59, 96, 219, 0.25); }
   .form-control::placeholder {
     color: #6c757d;
     opacity: 1; }
@@ -2003,7 +2003,7 @@ textarea.form-control {
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(89, 59, 219, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(59, 96, 219, 0.25); }
   .btn.disabled, .btn:disabled {
     opacity: 0.65; }
 
@@ -2442,15 +2442,6 @@ input[type="button"].btn-block {
 
 .dropdown-toggle {
   white-space: nowrap; }
-  .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
-    content: "";
-    border-top: 0.3em solid;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0;
-    border-left: 0.3em solid transparent; }
   .dropdown-toggle:empty::after {
     margin-left: 0; }
 
@@ -2898,7 +2889,7 @@ input[type="button"].btn-block {
     border-color: #1100ff;
     background-color: #1100ff; }
   .custom-control-input:focus ~ .custom-control-label::before {
-    box-shadow: 0 0 0 0.2rem rgba(89, 59, 219, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(59, 96, 219, 0.25); }
   .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
     border-color: #b4a7ef; }
   .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
@@ -3005,7 +2996,7 @@ input[type="button"].btn-block {
   .custom-select:focus {
     border-color: #b4a7ef;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(89, 59, 219, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(59, 96, 219, 0.25); }
     .custom-select:focus::-ms-value {
       color: #495057;
       background-color: #fff; }
@@ -3049,7 +3040,7 @@ input[type="button"].btn-block {
   opacity: 0; }
   .custom-file-input:focus ~ .custom-file-label {
     border-color: #b4a7ef;
-    box-shadow: 0 0 0 0.2rem rgba(89, 59, 219, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(59, 96, 219, 0.25); }
   .custom-file-input:disabled ~ .custom-file-label {
     background-color: #e9ecef; }
   .custom-file-input:lang(en) ~ .custom-file-label::after {
@@ -3096,11 +3087,11 @@ input[type="button"].btn-block {
   .custom-range:focus {
     outline: none; }
     .custom-range:focus::-webkit-slider-thumb {
-      box-shadow: 0 0 0 1px rgba(88, 115, 254, 0.04), 0 0 0 0.2rem rgba(89, 59, 219, 0.25); }
+      box-shadow: 0 0 0 1px rgba(88, 115, 254, 0.04), 0 0 0 0.2rem rgba(59, 96, 219, 0.25); }
     .custom-range:focus::-moz-range-thumb {
-      box-shadow: 0 0 0 1px rgba(88, 115, 254, 0.04), 0 0 0 0.2rem rgba(89, 59, 219, 0.25); }
+      box-shadow: 0 0 0 1px rgba(88, 115, 254, 0.04), 0 0 0 0.2rem rgba(59, 96, 219, 0.25); }
     .custom-range:focus::-ms-thumb {
-      box-shadow: 0 0 0 1px rgba(88, 115, 254, 0.04), 0 0 0 0.2rem rgba(89, 59, 219, 0.25); }
+      box-shadow: 0 0 0 1px rgba(88, 115, 254, 0.04), 0 0 0 0.2rem rgba(59, 96, 219, 0.25); }
   .custom-range::-moz-focus-outer {
     border: 0; }
   .custom-range::-webkit-slider-thumb {
@@ -3766,7 +3757,7 @@ input[type="button"].btn-block {
   .page-link:focus {
     z-index: 2;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(89, 59, 219, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(59, 96, 219, 0.25); }
 
 .page-item:first-child .page-link {
   margin-left: 0;
@@ -8074,7 +8065,7 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #343957;
+  background-color: #444b5d;
   transition: all .2s ease;
   z-index: 4; }
   .nav-header .logo-abbr {
@@ -10329,7 +10320,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   top: 5rem;
   padding-top: 0;
   z-index: 2;
-  background-color: #343957;
+  background-color: #444b5d;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: all .2s ease; }
   .quixnav .quixnav-scroll {
@@ -12574,7 +12565,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       float: none;
       border: none; } }
   .email-left-box .intro-title {
-    background: rgba(89, 59, 219, 0.1);
+    background: rgb(59 113 219 / 10%);
     padding: 1rem;
     margin: 1.875rem 0 1.25rem 0; }
     .email-left-box .intro-title h5 {
@@ -12599,7 +12590,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       padding-left: 0;
       padding-right: 0; } }
   .email-right-box .right-box-border {
-    border-right: 2px solid rgba(89, 59, 219, 0.1); }
+    border-right: 2px solid rgb(59 113 219 / 10%); }
   @media screen and (min-width: 649px) and (max-width: 1200px) {
     .email-right-box .right-box-padding {
       padding-left: 1.25rem; } }
@@ -16778,9 +16769,9 @@ table.dataTable thead th, table.dataTable thead td {
 
 table.dataTable tfoot th, table.dataTable tfoot td {
   border-top: 0; }
-
+/* 
 table.dataTable tbody tr, table.dataTable tbody td {
-  background: transparent !important; }
+  background: transparent !important; } */
 
 table.dataTable thead th {
   color: #454545;
@@ -16803,13 +16794,13 @@ table.dataTable tfoot th {
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
   border-radius: 50%;
   color: #1100ff !important;
-  background: rgba(89, 59, 219, 0.1);
+  background: rgb(59 113 219 / 10%);
   border: 0 !important; }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
   border-radius: 50%;
   color: #1100ff !important;
-  background: rgba(89, 59, 219, 0.1);
+  background: rgb(59 113 219 / 10%);
   border: 0; }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button {
@@ -19417,4 +19408,35 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-theme-version="dark"] .footer .copyright p {
       color: #fff; }
 
+/* thaipq 20240411 start*/
+.table-row-even {
+
+}
+
+.table-row-odd {
+  background-color: #f4f4f4 !important;
+}
+
+.table-row-even:hover,
+.table-row-odd:hover {
+  background-color: #f8f9fa !important;
+  cursor: pointer !important;
+}
+
+.button-no-boder {
+  border: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+  color: #66666678 !important;
+}
+
+.spacing {
+  margin-right: 10px !important;
+}
+
+.block {
+  display: block;
+}
+/* thaipq 20240411 end*/
 /*# sourceMappingURL=style.css.map */
