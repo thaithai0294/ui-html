@@ -25,9 +25,9 @@
     <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
     <!-- Custom Stylesheet -->
     <link href="./css/style.css" rel="stylesheet">
-    
+
 </head>
-    
+
 <body>
 
     <!--*******************
@@ -128,9 +128,11 @@
                 <ul class="metismenu" id="menu">
                     <li><a href="./index.html"><i class="icon icon-single-04"></i><span
                                 class="nav-text">Dashboard</span></a>
-                    <li><a href="./index.html#projectList"><i class="fa fa-folder-open"></i><span class="nav-text">Danh sách dự
+                    <li><a href="./index.html#projectList"><i class="fa fa-folder-open"></i><span class="nav-text">Danh
+                                sách dự
                                 án</span></a>
-                    <li><a href="./index.html#proposeList"><i class="fa fa-bell-o"></i><span class="nav-text">Thông báo</span></a>
+                    <li><a href="./index.html#proposeList"><i class="fa fa-bell-o"></i><span class="nav-text">Thông
+                                báo</span></a>
                     </li>
                     <li class="nav-label">Master Data</li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
@@ -144,10 +146,10 @@
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
                                 class="icon icon-chart-bar-33"></i><span class="nav-text">Danh Mục</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="./">Nhân công</a></li>
-                            <li><a href="./">Máy thi công</a></li>
-                            <li><a href="./">Khoản mục chi phí</a></li>
-                            <li><a href="./">Vật liệu</a></li>
+                            <li><a href="./emloyees.html">Nhân công</a></li>
+                            <li><a href="./machines.html">Máy thi công</a></li>
+                            <li><a href="./expense.html">Khoản mục chi phí</a></li>
+                            <li><a href="./material.html">Vật liệu</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -165,14 +167,6 @@
         <div class="content-body">
             <!-- row -->
             <div class="container-fluid">
-                <div class="row page-titles mx-0">
-                    <div class="col-sm-12 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
-                        <button type="button" class="btn btn-primary ms-auto btn-xs" data-toggle="modal"
-                            data-target="#exampleModalCenter">Thêm người dùng<span class="btn-icon-right"><i
-                                    class="fa fa-plus"></i></span>
-                        </button>
-                    </div>
-                </div>
                 <div class="card">
                     <div class="card-body">
                         <!-- Default accordion -->
@@ -180,8 +174,7 @@
                             <div class="accordion__item">
                                 <div class="accordion__header" data-toggle="collapse"
                                     data-target="#default_collapseOne">
-                                    <span class="accordion__header--text" id="proposeList">Danh sách (10 thành
-                                        viên)</span>
+                                    <span class="accordion__header--text" id="proposeList">Phân quyền User</span>
                                     <span class="accordion__header--indicator"></span>
                                 </div>
                                 <div id="default_collapseOne" class="collapse accordion__body show"
@@ -190,560 +183,461 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="card">
-                                                    <div class="card-header">
-                                                        <h4 class="card-title">Basic Datatable</h4>
-                                                    </div>
                                                     <div class="card-body">
                                                         <div class="table-responsive">
-                                                            <table id="example" class="display"
-                                                                style="min-width: 845px">
+                                                            <table id="tbl-role" class="" style="min-width: 845px">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>
-                                                                            <div class="form-group">
-                                                                                <div class="form-check">
-                                                                                    <input class="form-check-input"
-                                                                                        type="checkbox" />
-                                                                                </div>
-                                                                            </div>
-                                                                        </th>
-                                                                        <th>Ảnh</th>
-                                                                        <th>Trạng thái</th>
-                                                                        <th>Mã nhân viên</th>
-                                                                        <th>Tên nhân viên</th>
-                                                                        <th>Quyền</th>
-                                                                        <th>Chức danh</th>
-                                                                        <th>Chỉnh sửa</th>
-                                                                        <th>Xóa</th>
+                                                                        <th>User</th>
+                                                                        <th>Quản Trị Hệ Thống</th>
+                                                                        <th>Quản Lý Thu Chi</th>
+                                                                        <th>Quản Lý Dự Án</th>
+                                                                        <th>Giám Sát Công Trình</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control disabled" id="sel1" disabled>
+                                                                                    <option selected>Admin</option>
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>12345</td>
-                                                                        <td>Nguyên Van A</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>Giám đốc</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check disabled">
+                                                                                <input class="form-check-input" type="checkbox"  checked  disabled/>
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check disabled">
+                                                                                <input class="form-check-input" type="checkbox" checked  disabled/>
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check disabled">
+                                                                                <input class="form-check-input" type="checkbox" checked  disabled/>
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check disabled">
+                                                                                <input class="form-check-input" type="checkbox" checked  disabled/>
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>2353454</td>
-                                                                        <td>Đặng Nguyên I</td>
-                                                                        <td>Trưởng nhóm</td>
-                                                                        <td>Trưởng nhóm</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>457645</td>
-                                                                        <td>Trần Thi O</td>
-                                                                        <td>Nhân viên</td>
-                                                                        <td>Lao công</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>2352345</td>
-                                                                        <td>Nguyên Thi D</td>
-                                                                        <td>Nhân viên</td>
-                                                                        <td>Nhân viên kinh doanh</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>34634</td>
-                                                                        <td>Nguyễn Trần K</td>
-                                                                        <td>Lãnh đạo</td>
-                                                                        <td>Giám đốc</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>346456</td>
-                                                                        <td>Nguyên Van I</td>
-                                                                        <td>Trưởng Phòng</td>
-                                                                        <td>Trưởng Phòng Marketing</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>574574</td>
-                                                                        <td>Đặng Trần N</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>Kế toán</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Ngưng động</td>
-                                                                        <td>235233</td>
-                                                                        <td>Tran Thi Be A</td>
-                                                                        <td>Kế toán</td>
-                                                                        <td>Kế toán</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>12345</td>
-                                                                        <td>Nguyên Van A</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>Giám đốc</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>12345</td>
-                                                                        <td>Nguyên Van A</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>Giám đốc</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>12345</td>
-                                                                        <td>Nguyên Van A</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>Giám đốc</td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                         <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                            <div class="form-group">
+                        
+                                                                                <select class="form-control" id="sel1">
+                                                                                    <option>User1</option>
+                                                                                    <option>User2</option>
+                                                                                    <option>User3</option>
+                                                                                    <option>User4</option>
+                                                                                </select>
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>12345</td>
-                                                                        <td>Nguyên Van A</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>Giám đốc</td>
-                                                                        <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
                                                                         <td>
                                                                             <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>12345</td>
-                                                                        <td>Nguyên Van A</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>Giám đốc</td>
-                                                                        <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
                                                                         <td>
                                                                             <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>12345</td>
-                                                                        <td>Nguyên Van A</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>Giám đốc</td>
-                                                                        <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
                                                                         <td>
                                                                             <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
                                                                             </div>
                                                                         </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>12345</td>
-                                                                        <td>Nguyên Van A</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>Giám đốc</td>
-                                                                        <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
                                                                         <td>
                                                                             <div class="form-check">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" />
-                                                                                <i class="fa fa-unlock"
-                                                                                    aria-hidden="true"></i>
+                                                                                <input class="form-check-input" type="checkbox" />
+                        
                                                                             </div>
-                                                                        </td>
-                                                                        <td><i class="fa fa-user-circle-o"
-                                                                                aria-hidden="true"></i></td>
-                                                                        <td>Hoạt động</td>
-                                                                        <td>12345</td>
-                                                                        <td>Nguyên Van A</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>Quản trị</td>
-                                                                        <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-warning"><i
-                                                                                        class="fa fa-pencil-square-o"></i>
-                                                                                </span>
-                                                                            </button>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button type="button"
-                                                                                class="btn btn-rounded btn-outline-light">
-                                                                                <span class="text-danger"><i
-                                                                                        class="fa fa-trash"></i>
-                                                                                </span>
-                                                                            </button>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -756,161 +650,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModalCenter">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Thêm mới nhân viên</h5>
-                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="basic-form">
-                                <form>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Mã nhân viên
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Mã đăng nhập
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-sm-9">
-                                            <input class="form-control" type="text" value="" aria-label="" disabled
-                                                readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Họ tên
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Mật khẩu
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-sm-9">
-                                            <input type="password" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Email
-                                        </label>
-                                        <div class="col-sm-9">
-                                            <input type="email" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Quyền</label>
-                                        <div class="col-sm-9">
-                                            <select class="form-control">
-                                                <option>Nhân viên</option>
-                                                <option>Trưởng phòng</option>
-                                                <option>Trưởng nhóm</option>
-                                                <option>Lãnh đạo</option>
-                                                <option>Quản trị</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Chức danh
-                                        </label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Quản lý trực tiếp</label>
-                                        <div class="col-sm-9">
-                                            <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                                placeholder="Chọn người quản lý...">
-                                            <datalist id="datalistOptions">
-                                                <option value="Nguyên Văn A">
-                                                <option value="Phạm Hoàng H">
-                                                <option value="Trần Thị B">
-                                                <option value="Võ Văn C">
-                                                <option value="Nguyễn Trần G">
-                                            </datalist>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Trạng thái</label>
-                                        <div class="col-sm-9">
-                                            <select class="form-control">
-                                                <option>Hoạt động</option>
-                                                <option>Khóa</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Số điện thoại
-                                        </label>
-                                        <div class="col-sm-9">
-                                            <input type="number" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Giới tính</label>
-                                        <div class="col-sm-9">
-                                            <div class="radio form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="inlineRadio1" value="option1">
-                                                <label class="form-check-label" for="inlineRadio1">Nam</label>
-                                            </div>
-                                            <div class="radio form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="inlineRadio1" value="option1">
-                                                <label class="form-check-label" for="inlineRadio1">Nữ</label>
-                                            </div>
-                                            <div class="radio form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="inlineRadio1" value="option1">
-                                                <label class="form-check-label" for="inlineRadio1">N/A</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Ngày làm việc chính thức
-                                        </label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="" id="mdate">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label text-right">Ảnh thẻ
-                                        </label>
-                                        <div class="col-sm-9">
-                                            <div class="row">
-                                                <div class="col-sm-6 text-center">
-                                                    <img src="./imageSample/profile_3135715.png" class="rounded float-start w-40" alt="...">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="custom-file">
-                                                        <input type="file" class="custom-file-input form-control-sm">
-                                                        <label class="custom-file-label col-form-label-sm">Tải ảnh lên</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                            <button type="button" class="btn btn-primary">Tạo dự án</button>
                         </div>
                     </div>
                 </div>
@@ -956,7 +695,11 @@
 
     <!-- Datatable -->
     <script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+    <script src="assets/js/lib/data-table/jszip.min.js"></script>
+    <script src="assets/js/lib/data-table/buttons.html5.min.js"></script>
     <script src="./js/plugins-init/datatables.init.js"></script>
+    <script src="assets/js/roles.js"></script>
     <!-- Daterangepicker -->
     <!-- momment js is must -->
     <script src="./vendor/moment/moment.min.js"></script>
@@ -986,7 +729,6 @@
     <script src="./js/plugins-init/material-date-picker-init.js"></script>
     <!-- Pickdate -->
     <script src="./js/plugins-init/pickadate-init.js"></script>
-
 
 </body>
 

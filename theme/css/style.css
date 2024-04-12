@@ -19438,5 +19438,12 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .block {
   display: block;
 }
+.spacing-top{
+  margin-top: 10px !important;
+}
+.center {
+  text-align: center;
+  vertical-align: top;
+}
 /* thaipq 20240411 end*/
 /*# sourceMappingURL=style.css.map */

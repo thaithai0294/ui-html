@@ -38,7 +38,10 @@
                         'data-whatever': ''
                     });
                 }
-            },
+            },          
+        ],
+        columnDefs: [
+            { orderable: false, targets: [4] },
         ],
         stripeClasses: ['table-row-even', 'table-row-odd'], // Thêm class cho từng dòng
         language: { // Ngôn ngữ
@@ -50,12 +53,21 @@
     });
 
     table.on('click', 'tbody tr', function(e) {
-        if (!$(e.target).hasClass('fa-ellipsis-h')) {
+        if (!$(e.target).hasClass('fa-ellipsis-h') && $(e.target).prop('tagName') != 'SELECT' && !$(e.target).hasClass('dropdown-item')) {
             $('#exampleModalCenter').modal('show');
         }
+    });
+
+    table.on('click', 'a.remove-global', function (e) {
+        e.preventDefault();
+        removeGlobal();
     });
     
     table.rows().every(function() {
     });
    
 })(jQuery);
+
+function removeGlobal() {
+    $('#removeModalGlobal').modal('show');
+}

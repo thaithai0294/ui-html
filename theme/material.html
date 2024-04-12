@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hoang Dan Co.Ltp</title>
+    <!-- Favicon icon -->
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <!-- Datatable -->
+    <link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imageSample/office-building_4300059.png">
+    <!-- Daterange picker -->
+    <link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Clockpicker -->
+    <link href="./vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+    <!-- asColorpicker -->
+    <link href="./vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet">
+    <!-- Material color picker -->
+    <link href="./vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+    <!-- Pick date -->
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
+    <!-- Custom Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="brand-title" src="./imageSample/office-building_4300059.png" alt=""
+                    style="width: 30px; height: 30px; margin-right: 10px;">
+                <h5 style="color: aliceblue;font-weight: bold;">Hoang Dan Co.Ltd</h5>
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="./app-profile.html" class="dropdown-item">
+                                        <i class="icon-user"></i>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="./email-inbox.html" class="dropdown-item">
+                                        <i class="icon-envelope-open"></i>
+                                        <span class="ml-2">Inbox </span>
+                                    </a>
+                                    <a href="./page-login.html" class="dropdown-item">
+                                        <i class="icon-key"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li><a href="./index.html"><i class="icon icon-single-04"></i><span
+                                class="nav-text">Dashboard</span></a>
+                    <li><a href="./index.html#projectList"><i class="fa fa-folder-open"></i><span class="nav-text">Danh
+                                sách dự
+                                án</span></a>
+                    <li><a href="./index.html#proposeList"><i class="fa fa-bell-o"></i><span class="nav-text">Thông
+                                báo</span></a>
+                    </li>
+                    <li class="nav-label">Master Data</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-app-store"></i><span class="nav-text">Admin</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./users.html">Quản lý người dùng</a></li>
+                            <li><a href="./roles.html">Phân quyền quản trị</a></li>
+                            <li><a href="./">Thiết lập hệ thống</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-chart-bar-33"></i><span class="nav-text">Danh Mục</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./emloyees.html">Nhân công</a></li>
+                            <li><a href="./machines.html">Máy thi công</a></li>
+                            <li><a href="./expense.html">Khoản mục chi phí</a></li>
+                            <li><a href="./material.html">Vật liệu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Default accordion -->
+                        <div id="accordion-one" class="accordion">
+                            <div class="accordion__item">
+                                <div class="accordion__header" data-toggle="collapse"
+                                    data-target="#default_collapseOne">
+                                    <span class="accordion__header--text" id="proposeList">Quản lý tài nguyên và vật
+                                        liệu</span>
+                                    <span class="accordion__header--indicator"></span>
+                                </div>
+                                <div id="default_collapseOne" class="collapse accordion__body show"
+                                    data-parent="#accordion-one">
+                                    <div class="accordion__body--text">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table id="tbl-user" class="" style="min-width: 845px">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Mã</th>
+                                                                        <th>Tên Vật Liệu</th>
+                                                                        <th>Đơn Vị Tính</th>
+                                                                        <th>Giá Bán Buôn</th>
+                                                                        <th>Giá Bán Lẻ</th>
+                                                                        <th>Giá Vốn</th>
+                                                                        <th>Tồn Kho</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>VL0001</td>
+                                                                        <td>Vật Liệu 0001</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL00022</td>
+                                                                        <td>Vật liệu 0002</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL0001</td>
+                                                                        <td>Vật Liệu 0001</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL00022</td>
+                                                                        <td>Vật liệu 0002</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL0001</td>
+                                                                        <td>Vật Liệu 0001</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL00022</td>
+                                                                        <td>Vật liệu 0002</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL0001</td>
+                                                                        <td>Vật Liệu 0001</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL00022</td>
+                                                                        <td>Vật liệu 0002</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL0001</td>
+                                                                        <td>Vật Liệu 0001</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL00022</td>
+                                                                        <td>Vật liệu 0002</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL0001</td>
+                                                                        <td>Vật Liệu 0001</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>VL00022</td>
+                                                                        <td>Vật liệu 0002</td>
+                                                                        <td>Cái</td>
+                                                                        <td>
+                                                                            15.000.000
+                                                                        </td>
+                                                                        <td>35.000.000</td>
+                                                                        <td>30.000.000</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <!-- Thêm user-->
+            <div class="modal fade" id="exampleModalCenter">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Thêm mới thiết bị</h5>
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="basic-form">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Mã thiết bị
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Tên thiết bị
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Nhóm thiết bị</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control">
+                                                <option>Nhóm 1</option>
+                                                <option>Nhóm 2</option>
+                                                <option>Nhóm 3</option>
+                                                <option>Nhóm 4</option>
+                                                <option>Nhóm 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Đơn vị
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label text-right">Trạng thái</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control">
+                                                <option>15.000.000</option>
+                                                <option>15.000.000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Lưu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Import excel -->
+            <div class="modal fade" id="importExcel">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Import Excel</h5>
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Chọn file</h5>
+                            <form action="#">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Upload</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input">
+                                        <label class="custom-file-label">Choose file</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <fieldset class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                value="option1" checked>
+                                            <label class="form-check-label" for="">
+                                                Xóa hết mã thiết bị hiện tại rồi import lại (Mặc Định)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                value="option2">
+                                            <label class="form-check-label">
+                                                Chỉ import những mã mã thiết bị nào chưa có trong dữ liệu
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                value="option3">
+                                            <label class="form-check-label">
+                                                Tạo mới đói với mã chi phí nào chưa tồn tại và Cập Nhật NV đã tồn tại
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Import</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Remove use -->
+            <div class="modal fade bd-example-modal-sm" id="removeModalGlobal" tabindex="-1" role="dialog"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Xóa thiết bị</h5>
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Xác nhận xóa thiết bị</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Xóa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <script src="./js/custom.min.js"></script>
+
+
+
+    <!-- Datatable -->
+    <script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+    <script src="assets/js/lib/data-table/jszip.min.js"></script>
+    <script src="assets/js/lib/data-table/buttons.html5.min.js"></script>
+    <script src="assets/js/table-global.js"></script>
+    <!-- Daterangepicker -->
+    <!-- momment js is must -->
+    <script src="./vendor/moment/moment.min.js"></script>
+    <script src="./vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- clockpicker -->
+    <script src="./vendor/clockpicker/js/bootstrap-clockpicker.min.js"></script>
+    <!-- asColorPicker -->
+    <script src="./vendor/jquery-asColor/jquery-asColor.min.js"></script>
+    <script src="./vendor/jquery-asGradient/jquery-asGradient.min.js"></script>
+    <script src="./vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js"></script>
+    <!-- Material color picker -->
+    <script src="./vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <!-- pickdate -->
+    <script src="./vendor/pickadate/picker.js"></script>
+    <script src="./vendor/pickadate/picker.time.js"></script>
+    <script src="./vendor/pickadate/picker.date.js"></script>
+
+
+
+    <!-- Daterangepicker -->
+    <script src="./js/plugins-init/bs-daterange-picker-init.js"></script>
+    <!-- Clockpicker init -->
+    <script src="./js/plugins-init/clock-picker-init.js"></script>
+    <!-- asColorPicker init -->
+    <script src="./js/plugins-init/jquery-asColorPicker.init.js"></script>
+    <!-- Material color picker init -->
+    <script src="./js/plugins-init/material-date-picker-init.js"></script>
+    <!-- Pickdate -->
+    <script src="./js/plugins-init/pickadate-init.js"></script>
+
+</body>
+
+</html>
