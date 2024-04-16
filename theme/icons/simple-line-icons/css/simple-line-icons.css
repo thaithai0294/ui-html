@@ -9,12 +9,12 @@
  Use the following CSS code if you want to have a class per icon.
  Instead of a list of all class selectors, you can use the generic [class*="icon-"] selector, but it's slower: 
 */
-.icon-user,
+.fa fa-user-o,
 .icon-people,
-.icon-user-female,
-.icon-user-follow,
-.icon-user-following,
-.icon-user-unfollow,
+.fa fa-user-o-female,
+.fa fa-user-o-follow,
+.fa fa-user-o-following,
+.fa fa-user-o-unfollow,
 .icon-login,
 .icon-logout,
 .icon-emotsmile,
@@ -203,22 +203,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-user:before {
+.fa fa-user-o:before {
   content: "\e005";
 }
 .icon-people:before {
   content: "\e001";
 }
-.icon-user-female:before {
+.fa fa-user-o-female:before {
   content: "\e000";
 }
-.icon-user-follow:before {
+.fa fa-user-o-follow:before {
   content: "\e002";
 }
-.icon-user-following:before {
+.fa fa-user-o-following:before {
   content: "\e003";
 }
-.icon-user-unfollow:before {
+.fa fa-user-o-unfollow:before {
   content: "\e004";
 }
 .icon-login:before {

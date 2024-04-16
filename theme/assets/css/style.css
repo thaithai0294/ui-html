@@ -695,14 +695,14 @@ a.dt-button.active:not(.disabled) {
 /*    Header
 ---------------*/
 .header {
-  background: #ffffff;
+  background: #282e39;
   z-index: 990;
   margin-left: 250px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: margin-left 300ms ease-in-out 0s;
 }
 .logo {
-  background: #444b5d;
+  background: #282e39;
   display: inline-block;
   padding: 15px 0;
   text-align: center;
